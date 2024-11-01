@@ -1,0 +1,1003 @@
+/* <--------------Inicio estilos menu-----------------> */
+#menu {
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+#menu #menuDesplegable {
+  display: flex;
+  background-color: white;
+  width: 46%;
+  height: 100vh;
+  }
+#menu #menuDesplegable .mitad1 {
+  width: 50%;
+  height: 100vh;
+}
+#menu #menuDesplegable .mitad1 ul {
+  list-style: none;
+  margin-top: 13vh;
+  margin-right: 11%;
+}
+#menu #menuDesplegable #mitad1PorDefecto ul li {
+  padding-top: 2.5vh;
+  padding-bottom: 0.3vh;
+  font-size: 22px;
+  height: 5vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#menu #menuDesplegable #mitad1ModelosCoche ul li {
+  padding-top: 3vh;
+  padding-bottom: 2.3vh;
+  font-weight: bold;
+  font-size: 27px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#menu #menuDesplegable #mitad1ModelosCoche  {
+  margin-top: -3vh;
+}
+#menu #menuDesplegable #mitad1ModelosCoche ul li div {
+  font-weight: normal;
+  font-size: 15px;
+}
+#menu #menuDesplegable #mitad1ModelosCoche ul li img {
+  display: flex;
+  width: 5%;
+  margin-left: 90%;
+  margin-top: -4vh;
+}
+#mitad1ModelosCoche #buttonGoBack img {
+  height: 2vh;
+  width: 1vw;
+}
+#buttonGoBack {
+  margin-left: 2.8vw;
+  margin-top: 9vh;
+  width: 5vw;
+  position: absolute;
+}
+#buttonGoBack:hover {
+  background-color: #EEEFF2;
+  border-radius: 10px;
+}
+#menu #menuDesplegable .mitad1 ul li img {
+  display: flex;
+  width: 5%;
+  margin-left: 90%;
+  margin-top: -2vh;
+}
+#menu #menuDesplegable .mitad1 ul li:hover {
+  background-color: #EEEFF2;
+  border-radius: 5px;
+}
+#menu #menuDesplegable .mitad1 ul .selected {
+  background-color: #EEEFF2;
+  border-radius: 10px;
+}
+#menu #menuDesplegable .mitad1 ul .unselected {
+  background-color: white;
+}
+#menu #menuDesplegable .mitad2 {
+  display: none;
+  background-color: #EEEFF2;
+  width: 50%;
+  height: 100vh;
+  overflow-x: scroll;
+}
+#ocultarMenu img {
+      margin-left: 20px;
+      margin-top: 2vh;
+      width: 60px;
+  }
+
+  .mitad2  {
+    font-family:"Porsche Next", "Arial Narrow", Arial, "Heiti SC", "SimHei", "sans-serif" ;
+    }
+    
+    
+    .myPorsche {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content:right;;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 30px;
+    
+    }
+    
+    #myPorsche a {
+    color:black;
+    }
+    
+    .ahora:hover{
+      background-color: rgb(224, 218, 218);
+      }
+    .mundo{
+     text-decoration: none;
+     
+    }  
+
+    .myPorsche button {
+    border: 1px solid black ;
+    width: 300px;
+    height: 50px ;
+    border-radius: 5px;
+    margin:1px;
+    margin-right: 30px;
+    margin-top: 60px;
+    margin-left: 10px;
+    }
+    
+    .button1 {
+      background-color: black;
+      color: white;
+    }
+   
+
+    .inicio p{
+      color: black;
+      font-family: Arial, Helvetica, sans-serif;
+      display: block;
+      margin-left: 10%;
+      margin-top: 10%;
+      font-size: 18px;
+    }
+    
+     #mitad1ModelosCoche {
+      display: none;
+     }
+
+     .hoverable{
+      display: inline;
+      padding:0.5rem ;
+      border-radius: 3px;
+     }
+     .hoverable:hover{
+     background-color:rgb(227, 220, 220);
+     }
+
+     .inicio a {
+     text-decoration: none; 
+     }
+     .mundo a{
+      text-decoration: none;  
+      }
+
+      .registrarse {
+        font-family: Arial, Helvetica, sans-serif;
+        display: block;
+        margin-left: 10%;
+        margin-top: 10%;
+        font-size: 16px;
+        color:grey;
+       
+      }
+	  .centrosPorsche {
+      margin-left: 2vw;
+      margin-top: 10vh;
+     }
+     .centrosPorsche input[type="search"] {
+      height: 6vh;
+      width: 18.5vw;
+      border-radius: 5px;
+     }
+     .centrosPorsche button {
+      border: none;
+      position: absolute;
+      margin-left: -40px;
+      margin-top: 20px;
+      background-color: white;
+     }
+     .centrosPorsche button img {
+      width: 1vw;
+      height: 2vh;
+      
+     }
+     .centrosPorsche p {
+      margin-top: 30px;
+     }
+     .centrosPorsche .ubicacionActual img {
+      width: 1vw;
+      height: 2vh;
+      margin-left: -20px;
+     }
+     .centrosPorsche .ubicacionActual p {
+      margin-top: 15px;
+      margin-left: 10px;
+     }
+     .centrosPorsche .ubicacionActual {
+      display: inline-flex;
+      align-items: center;
+      border: 2px solid black;
+      justify-content: center;
+      height: 6vh;
+      width: 18.5vw;
+      border-radius: 5px;
+     }
+     .centrosPorsche .ubicacionActual:hover {
+      background-color: rgb(224, 218, 218); 
+      cursor: pointer;
+     }
+
+     .onlinePorsche a{
+      text-decoration: none;
+      color: black;
+      width: max-content;
+     }
+/* <--------------fin estilos menu-----------------> */
+/* <--------------Inicio estilos Carlos-----------------> */
+#parte1 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+}
+#parte1 video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+.contenido1{
+  position: relative;
+  z-index: 1;
+  cursor: auto;
+}
+#parte2{
+  display: flex;
+  margin-top: 11vh;
+  padding-left: 13.5%;
+  padding-right: 13.5%;
+  margin-bottom: 14.58vh;
+}
+#parte2 img{
+ width: 22.083vw;     
+ list-style-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 10));
+ cursor: pointer;
+}
+#parte2 .enlace{
+  width: 28.083vw; 
+}
+.marginImg {
+  margin-left: 2.5%;
+  text-decoration: none;
+}
+.enlaceMacan4{
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  font-size: 17px;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#containerEnlace {
+  color: white;
+  width: 30%;
+  position: absolute;
+  top: 39vh;
+  left: 10%;
+  cursor: pointer;
+}
+#containerEnlace h1{
+  font-size: 50px;
+  cursor:pointer;
+  font: normal normal 400 clamp(2.28rem, 5.2vw + 1.24rem, 7.48rem) / calc(6px + 2.125ex) Arial, Helvetica, sans-serif;
+}
+.enlaceMacan4:hover{
+  background-color: rgba(89, 83, 83, 0.515);
+}
+#pause {
+  position: absolute;
+  right: 5%;
+  top: 90vh;
+}
+.iconoPausa {
+  background-color: transparent;
+}
+#pause button {
+  background-color: transparent;
+  border: 1px solid white;
+  cursor: pointer;
+  padding: 10px;
+}
+#pausa2 {
+  display: none;
+}
+.Textoimagen {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  left: 4vh;
+  bottom: 18%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Textoimagen1 {
+  text-decoration: none;             
+}
+#navbar {
+  display: flex;
+  background-color: transparent;
+  width: 100%;
+  height: 13vh;
+}
+.navbar-items {
+  display: flex;
+  width: 100%;
+  list-style: none;
+  justify-content: space-between;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.size {
+  font-size: 15px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: row;
+  height: 1.7vh;
+  margin-left: 30px;
+}
+.size img {
+  width: 0.5vw;
+  height: 1.7vh;
+  padding-right: 10px;
+}
+.size:hover {
+  background-color: rgba(89, 83, 83, 0.515);
+}
+.svgNavbar:hover {
+  background-color: rgba(89, 83, 83, 0.515);
+}
+.porscheNavbar {
+  margin-right: 100px;
+  font-family: "Porsche Next", "Arial Narrow", Arial, "Heiti SC", "SimHei", "sans-serif";
+  font-size: 30px;
+}
+.svgNavbar {
+  margin-right: 50px;
+  justify-content: center;
+  width: 1.7vw;
+  cursor: pointer;
+  height: 3.5vh;
+  
+}
+
+.svgNavbar svg {
+  width: 100%;
+}
+
+/* <--------------Fin estilos Carlos -------------------> */
+/* <--------------Inicio estilos Ousama-----------------> */
+.contenedor-titulo-imagenes {
+  margin-top: 100px; 
+}
+
+.Titulo {
+  position: relative;
+  top: 0px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  color: black;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  z-index: 1; 
+}
+
+.contenedor-imagen {
+  position:relative;
+  display: inline-block;
+  margin-right: 20px; 
+  margin-bottom: 20px;
+  
+}
+
+.imagen-zoom {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.imagen-zoom img {
+  transition: transform 0.3s ease;
+}
+
+.imagen-zoom:hover img {
+  transform: scale(1.1);
+}
+
+.texto-superpuesto {
+  position:absolute;
+  top: 325px;
+  left: 20px;
+  color: white;
+  padding: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  z-index: 1; 
+  text-align: left;
+}
+
+.texto-superpuesto2 {
+  position:absolute;
+  top: 380px;
+  left: 20px;
+  color: white;
+  padding: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  z-index: 1; 
+}
+
+.texto-superpuesto3 {
+  position:absolute;
+  top: 410px;
+  left: 25px;
+  color: black;
+  background-color: aliceblue;
+  padding: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  z-index: 1;
+  border-radius: 5px;
+  width: 335px;
+  height: 30px;
+}
+
+.texto-superpuesto4 {
+  position:absolute;
+  top: 470px;
+  left: 25px;
+  color: white;
+  background-color: rgba(240, 248, 255, 0.149);
+  padding: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  z-index: 1;
+  border-radius: 5px;
+  border-color: white;
+  border: 2px solid white;
+  width: 335px;
+  height: 30px;
+}
+
+.imagenA,
+.imagenB,
+.imagenC,
+.imagenD,
+.imagenE,
+.imagenF {
+  width: 400px; 
+  height: auto; 
+  border-radius: 10px;
+}
+
+.contenedor-imagen img {
+  transition: transform 0.3s ease; 
+}
+
+.contenedor-imagen:hover img {
+  transform: scale(1.1); 
+}
+
+.texto-superpuesto3:hover, 
+.texto-superpuesto4:hover {
+  background-color: rgb(144, 142, 142); 
+  color: rgb(255, 255, 255); 
+  transform: 0.8s ease;
+}
+
+#modelos {
+  display: flex;
+  justify-content: space-between; 
+  padding-left: 75px;
+  padding-top: 70px;
+}
+
+#modelos img {
+  display: block;
+  width: 100%;
+  max-width: 70%; /* Ajusta el tamaño máximo de las imágenes según sea necesario */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#modelos img:hover {
+  transform: scale(1.1);
+  
+}
+
+.Posicionamiento{
+  margin-top: 35%;
+}
+
+.Posicionamiento a{
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  margin-left: 10%;
+  margin-top: 10%;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#asesoramiento a{
+color: black;
+font-family: Arial, Helvetica, sans-serif;
+display: block;
+margin-left: 10%;
+margin-top: 10%;
+text-decoration: none;
+font-size: 18px;
+
+}
+
+#servicios a{
+color: black;
+font-family: Arial, Helvetica, sans-serif;
+display: block;
+margin-left: 10%;
+margin-top: 10%;
+text-decoration: none;
+font-size: 18px;
+}
+
+.configurar{
+  border: 2px solid #000; /* Grosor y color del borde */
+  padding: 10px; /* Espacio dentro del recuadro */
+  width: 200px;
+  margin-left: 20%;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  text-align: center;
+  
+  
+}
+
+.configurar a{
+  text-decoration: none;
+  color: black;
+}
+
+.configurar:hover{
+  background-color: rgba(128, 128, 128, 0.17);
+  transition: 0.3ms;
+}
+
+.comparar{
+  border: 2px solid #000; /* Grosor y color del borde */
+  padding: 10px; /* Espacio dentro del recuadro */
+  width: 200px;
+  margin-left: 20%;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.comparar a{
+  text-decoration: none;
+  color: black;
+}
+
+.comparar:hover{
+  background-color: rgba(128, 128, 128, 0.17);
+  transition: 0.3ms;
+}
+
+.reestreno{
+  border: 2px solid #000; /* Grosor y color del borde */
+  padding: 10px; /* Espacio dentro del recuadro */
+  width: 200px;
+  margin-left: 20%;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.reestreno a{
+  text-decoration: none;
+  color: black;
+}
+
+.reestreno:hover{
+  background-color: rgba(128, 128, 128, 0.17);
+  transition: 0.3ms;
+}
+
+.marcaModelo{
+  border: 2px solid #000; /* Grosor y color del borde */
+  padding: 10px; /* Espacio dentro del recuadro */
+  width: 200px;
+  margin-left: 20%;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.marcaModelo a{
+  text-decoration: none;
+  color: black;
+}
+
+.marcaModelo:hover{
+  background-color: rgba(128, 128, 128, 0.17);
+  transition: 0.3ms;
+}
+
+.estructura{
+  margin-top: 25%;
+}
+
+.modelos2{
+  display: block;
+  margin-left: 22%;
+  margin-bottom: 20px;
+}
+
+
+
+.modelos2 img {
+  display: block;
+  width: 100%;
+  max-width: 70%; /* Ajusta el tamaño máximo de las imágenes según sea necesario */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modelos2 img:hover {
+  transform: scale(1.1);
+  
+}
+
+
+
+/* <--------------Fin estilos Ousama -------------------> */
+/* <--------------inicio estilos Harold -------------------> */
+
+.contall {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+
+}
+
+
+.container-buscador{
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  display: flex;
+}
+.searchcontainer{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.search{
+  margin-bottom: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+
+.imagencoche{
+  justify-content: end;
+  align-items: end;
+  object-fit: contain;
+  width: 100%;
+  display: flex;
+  height: 100%; 
+
+}
+.imagencoche img{ 
+  margin-left: auto;
+  display: flex;
+  width: 120%;
+}
+#busqueda{
+  color: rgb(0,0,0);
+  font-family: "Porsche next", "Arial Narrow", Arial, "Heiti SC", SimHei, sans-serif;
+  font-size: 16px;
+  max-width: 2560px;
+  min-width: 320px;
+  margin-right: 280px;
+  margin-bottom: 8px;
+}
+
+.div-porsche{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 400px;
+  margin-left: 100px;
+  margin-top: auto;
+}
+
+#busqueda p{
+  color: rgb(1, 2, 5);
+  font: 4001rem/calc(2.125ex + 6px)"";
+  font-family:"Porsche next", "Arial Narrow", Arial, "Heiti SC", SimHei, sans-serif;
+  font-size: 16px;
+  font-weight:400;
+  margin: 0px;
+  margin-bottom: var(--pcom-spacing-x-small);
+  padding: 0px;
+  text-align: start;
+  
+  
+}
+.buscadorhead{
+  color: rgb(1, 2, 5);
+  font-family: "Porsche next", "Arial Narrow", Arial, "Heiti SC", SimHei, sans-serif;
+  font-size: 28.6852px;
+  font-weight:600;
+  margin-bottom: 10px;
+}
+.buscadorhead p {
+  margin-top: 30px;
+  font-family: "Porsche next", "Arial Narrow", Arial, "Heiti SC", SimHei, sans-serif;
+}
+.content img{
+  width: 500px;
+}
+
+.container-search{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.container-search p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font: 400 16px/ calc(2.125ex + 6px) "Porsche Next", "Arial Narrow", Arial,"Heiti SC", SimHei, sans-herif;
+  font-family: "Porsche Next", "Arial Narrow", Arial,"Heiti SC", SimHei, sans-herif;
+  font-size: 16px;
+  margin-left: 120px;
+  
+}
+
+.input-wrapper {
+  display: flex;
+  position: relative;
+  width: 452px;
+  height: 54px;
+  padding-left: 5px;
+  border-color:  black ;
+}
+
+.input {
+  box-sizing: border-box;
+  color: #191919;
+  padding: 15px 15px 15px 35px;
+  width: 100%;
+  border-color:  black  ;
+
+}
+
+.input.password {
+  padding: 15px 35px 15px 15px;
+}
+
+.input-icon {
+  color: #c5c1c1;
+  transform: scaleX(-1);
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 12px;
+  top: 11px;
+}
+.descubre{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.descubremas{
+  font-size: 51px;
+  font-weight: 600px;
+  font: bold 600;
+  font-family: "Porsche Next", "Arial Narrow", Arial,"Heiti SC", SimHei, sans-herif;
+}
+
+/* DESCUBRE MÁS */
+
+
+.images{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  align-self: center;
+  margin-bottom: 100px;
+  
+}
+.content{
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 408px;
+  width: 408px;
+  overflow: hidden;
+  border-radius: 3%;
+  
+
+
+}
+.content p {
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  font-family: "Porsche Next", "Arial Narrow", Arial,"Heiti SC", SimHei, sans-herif;
+  font-weight: 500;
+  margin-left: 30px;
+  margin-bottom: -22px;
+  margin-right: 100px;
+  margin-top: 200px;
+}
+.content img{
+  width: 405px;
+  transition: transform 0.5s ease;
+  border-radius: 3%;
+  
+  
+  
+  
+}
+
+
+.content img:hover{
+  transform: scale(1.05);
+
+}
+.image-container{
+  display: flex;
+  align-items: end;
+}
+
+
+.text{
+  z-index: 1;
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  font-family: "Porsche Next", "Arial Narrow", Arial,"Heiti SC", SimHei, sans-herif;
+  font-weight: 500;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  margin-right: 20px;
+}
+
+
+.text:hover{
+  position: absolute;
+  z-index: 1;
+}
+/* <--------------Fin estilos Harold -------------------> */
+/* <-------------- Inicio Natalia -------------------> */
+
+
+footer {
+  background-color: rgb(14, 14, 18);
+  color: white;
+  font-family: "Porsche Next", "Arial Narrow", Arial, "Heiti SC", "SimHei", "sans-serif" ;
+  width: 92%;
+  padding: 80px;
+  font-size: 15px;
+  margin-right: 50px;
+}
+
+.spain{
+ width: 30px;
+ height: 30px; 
+}
+
+.bloque{
+  margin-left: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: normal;
+}
+
+.bloque2{
+margin: 20px;
+color: white;
+}
+
+.bloque2:hover {
+  color: red;
+}
+
+.part-2{
+display: flex;  
+flex-direction: row;
+gap:2rem;
+
+}
+
+
+.redes {
+  display:flex ; 
+  flex-direction: column; 
+  /* margin:0.1rem; */
+  }
+  
+.Contacto button{
+
+  border-radius: 5px;
+  width: 250px;
+  height: 50px;
+  font-size: 16px;
+ 
+}
+
+button:hover {
+  background-color: rgb(207, 199, 199);
+}
+
+.part-3{
+  display: flex;  
+  flex-direction: row;
+  gap:10rem;
+  }
+
+.block1:hover:hover {
+  color: red;
+  display: block;
+
+}
+.block1{
+ margin:0.5rem; 
+
+}
+
+.logos{
+padding: 15px;
+background-color: white;
+border-radius: 5px;
+width: 20px;
+height: 10x;  
+margin: 5px;
+}
+
+.logos:hover {
+  background-color: rgb(207, 199, 199);
+}
+.box {
+  display:flex ; 
+  flex-direction: column;
+  margin:0;
+}
+.box a{
+  text-decoration: none; 
+  color:white;
+ }
+ 
+
+.region{
+ font-size: 20px; 
+}
+
+.bloque3 {
+color: white;
+}
+
+.bloque3:hover:hover{
+color: red;
+}
+
+.footerporsche{
+  margin-left: 650px;
+}
+
+/* <--------------Fin estilos Natalia -------------------> */

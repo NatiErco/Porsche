@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>porscheGrupo1</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+		<script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body style="margin: 0; padding:0">
+<!-- inicio Menu  -->
+  <div id="menu">
+    <div id="menuDesplegable">
+      <div class="mitad1" id="mitad1PorDefecto">
+        <ul>
+          <li class="menuListado unselected" id="modelosListado" onclick="mostrarElementos('modelos', this)">Modelos <img src="media/mayor-que.png"></li>
+          <li class="menuListado unselected" onclick="mostrarElementos('asesoramiento', this)">Asesoramiento y compra <img src="media/mayor-que.png"></li>
+          <li class="menuListado unselected onlinePorsche" onclick="mostrarElementos('tienda', this)"><a href="https://shop.porsche.com/es/es-ES">Tienda porsche online</a></li>
+          <li class="menuListado unselected" onclick="mostrarElementos('servicios', this)">Servicios <img src="media/mayor-que.png"></li>
+          <li class="menuListado unselected" onclick="mostrarElementos('experiencias', this)">Experiencias <img src="media/mayor-que.png"></li>
+          <li class="menuListado unselected" onclick="mostrarElementos('centros', this)">Centros porsche <img src="media/mayor-que.png"></li>
+          <li class="menuListado unselected" onclick="mostrarElementos('myPorsche', this)">MyPorsche <img src="media/mayor-que.png"></li>
+        </ul>
+  </div>
+  <div class="mitad1" id="mitad1ModelosCoche">
+    <div id="buttonGoBack" onclick="mostrarMenu(true)"> <img src="media/flechaIzquierda.png" > Modelos</div>
+    <ul>
+      <li class="segundoListado unselected" id="li718" onclick="mostrarModelos('718', this)">718 <div>Gasolina</div><img src="media/mayor-que.png"></li>
+      <li class="segundoListado unselected" id="li911" onclick="mostrarModelos('911', this)">911 <div>Gasolina</div><img src="media/mayor-que.png"></li>
+      <li class="segundoListado unselected" id="litaycan" onclick="mostrarModelos('taycan', this)">Taycan <div>Eléctrico</div><img src="media/mayor-que.png"></li>
+      <li class="segundoListado unselected" id="lipanamera" onclick="mostrarModelos('panamera', this)">Panamera <div>Gasolina | Híbrido</div><img src="media/mayor-que.png"></li>
+      <li class="segundoListado unselected" id="limacan" onclick="mostrarModelos('macan', this)">Macan <div>Eléctrico | Gasolina</div><img src="media/mayor-que.png"></li>
+      <li class="segundoListado unselected" id="licayenne" onclick="mostrarModelos('cayenne', this)">Cayenne <div>Gasolina | Híbrido</div><img src="media/mayor-que.png"></li>
+    </ul>
+  </div>
+  <div class="mitad2" id="718">
+    <div class="estructura">
+    <div class="configurar">
+      <a href="https://configurator.porsche.com/es-ES/model-start/718">Configurar</a>
+        
+    </div>
+    <div class="comparar">
+      <a href="https://www.porsche.com/spain/compare/?model-range=718">Comparar</a>
+    </div>
+    <div class="reestreno">
+      <a href="https://finder.porsche.com/es/es-ES/search/718?int_ref=globalnav&int_medium=link&int_id=inventory&model=718">Vehículos Nuevos y de Re-estreno</a>
+    </div>
+    <div class="modelos2">
+      <a href="https://www.porsche.com/spain/models/718/718-models/718-cayman/"><img src="https://nav.porsche.com/00BC524/model-assets/1360/718-cayman.webp" alt="cayman"></a>
+      <a href="https://www.porsche.com/spain/models/718/718-models/718-boxster/"><img src="https://nav.porsche.com/00BC524/model-assets/1360/718-boxster.webp" alt="boxster"></a>
+      <a href="https://www.porsche.com/spain/models/718/718-cayman-gt4-rs/"><img src="https://nav.porsche.com/00BC524/model-assets/1360/718-cayman-gt4-rs.webp" alt="gt4"></a>
+      <a href="https://www.porsche.com/spain/models/718/718-spyder-rs/"><img src="https://nav.porsche.com/00BC524/model-assets/1360/718-spyder-rs.webp" alt="spyder"></a>
+    </div>
+    <div class="marcaModelo">
+      <a href="https://www.porsche.com/spain/models/718/">Modelos 718</a>
+    </div>
+  </div>
+</div>
+  <div class="mitad2" id="911">
+    <div class="estructura">
+      <div class="configurar">
+        <a href="https://configurator.porsche.com/es-ES/model-start/911">Configurar</a>
+      </div>
+      <div class="comparar">
+        <a href="https://www.porsche.com/spain/models/911/?compare">Comparar</a>
+      </div>
+      <div class="reestreno">
+        <a href="https://finder.porsche.com/es/es-ES/search/list?modelSeriesKeys=911&int_ref=globalnav&int_medium=link&int_id=inventory">Vehículos Nuevos y de Re-estreno</a>
+      </div>
+      <div class="modelos2">
+        <a href="https://www.porsche.com/spain/models/911/911-models/carrera/"><img src="https://nav.porsche.com/00BC524/model-assets/1360/911-carrera.webp" alt="cayman"></a>
+        <a href="https://www.porsche.com/spain/models/911/911-models/carrera-cabriolet/"><img src="https://nav.porsche.com/00BC524/model-assets/1360/911-carrera-cabriolet.webp" alt="boxster"></a>
+        <a href="https://www.porsche.com/spain/models/911/911-models/targa-4/"><img src="https://nav.porsche.com/00BC524/model-assets/1360/911-targa.webp" alt="gt4"></a>
+        <a href="https://www.porsche.com/spain/models/911/911-turbo-models/911-turbo/"><img src="https://nav.porsche.com/00BC524/model-assets/1360/911-turbo.webp" alt="spyder"></a>
+        <a href="https://www.porsche.com/spain/models/911/911-turbo-models/911-turbo-cabriolet/"><img src="https://nav.porsche.com/00BC524/model-assets/1360/911-turbo-cabriolet.webp" alt="cayman"></a>
+        <a href="https://www.porsche.com/spain/models/911/911-gt3-models/911-gt3/"><img src="https://nav.porsche.com/00BC524/model-assets/1360/911-gt3.webp" alt="boxster"></a>
+        <a href="https://www.porsche.com/spain/models/911/911-gt3-rs/"><img src="https://nav.porsche.com/00BC524/model-assets/1360/911-gt3-rs.webp" alt="gt4"></a>
+        <a href="https://www.porsche.com/spain/models/911/911-st/"><img src="https://nav.porsche.com/00BC524/model-assets/1360/911-st.webp" alt="spyder"></a>
+      </div>
+      <div class="marcaModelo">
+        <a href="https://www.porsche.com/spain/models/911">Modelos 911</a>
+      </div>
+    </div>
+  </div>
+  <div class="mitad2" id="taycan">
+    <div class="estructura">
+      <div class="configurar">
+        <a href="https://configurator.porsche.com/es-ES/model-start/taycan">Configurar</a>
+      </div>
+      <div class="comparar">
+        <a href="https://www.porsche.com/spain/models/taycan/?compare">Comparar</a>
+      </div>
+      <div class="reestreno">
+        <a href="https://finder.porsche.com/es/es-ES/search/list?modelSeriesKeys=taycan&int_ref=globalnav&int_medium=link&int_id=inventory">Vehículos Nuevos y de Re-estreno
+        </div></a>
+      <div class="modelos2">
+        <a href="https://www.porsche.com/spain/models/taycan/taycan-models/taycan/"><img src="https://nav.porsche.com/00BC524/model-assets/1360/taycan.webp" alt="cayman"></a>
+        <a href="https://www.porsche.com/spain/models/taycan/taycan-cross-turismo-models/taycan-4-cross-turismo/"><img src="https://nav.porsche.com/00BC524/model-assets/1360/taycan-cross-turismo.webp" alt="boxster"></a>
+        <a href="https://www.porsche.com/spain/models/taycan/taycan-sport-turismo-models/taycan-sport-turismo/"><img src="https://nav.porsche.com/00BC524/model-assets/1360/taycan-sport-turismo.webp" alt="gt4"></a>
+        
+      </div>
+      <div class="marcaModelo">
+        <a href="https://www.porsche.com/spain/models/taycan">Modelos Taycan</a>
+      </div>
+    </div>
+  </div>
+  <div class="mitad2" id="panamera">
+    <div class="estructura">
+      <div class="configurar">
+        <a href="https://configurator.porsche.com/es-ES/model-start/panamera">Configurar</a>
+      </div>
+      <div class="comparar">
+        <a href="https://www.porsche.com/spain/models/panamera/?compare">Comparar</a>
+      </div>
+      <div class="reestreno">
+        <a href="https://finder.porsche.com/es/es-ES/search/list?modelSeriesKeys=panamera&int_ref=globalnav&int_medium=link&int_id=inventory">Vehículos Nuevos y de Re-estreno</a>
+      </div>
+      <div class="modelos2">
+        <a href="https://www.porsche.com/spain/models/panamera/panamera-models/panamera/"><img src="https://nav.porsche.com/00BC524/model-assets/1360/panamera.webp" alt="cayman"></a>
+        <a href="https://www.porsche.com/spain/models/panamera/panamera-models/panamera-4-e-hybrid-executive/"><img src="https://nav.porsche.com/00BC524/model-assets/1360/panamera-executive.webp" alt="boxster"></a>
+       
+      </div>
+      <div class="marcaModelo">
+        <a href="https://www.porsche.com/spain/models/panamera">Modelos Panamera</a>
+      </div>
+    </div>
+  </div>
+  <div class="mitad2" id="macan">
+    <div class="estructura">
+      <div class="configurar">
+        <a href="https://configurator.porsche.com/es-ES/model-start/macan">Configurar</a>
+      </div>
+      <div class="comparar">
+        <a href="https://www.porsche.com/spain/models/macan/?compare">Comparar</a>
+      </div>
+      <div class="reestreno">
+        <a href="https://finder.porsche.com/es/es-ES/search/list?modelSeriesKeys=macan&int_ref=globalnav&int_medium=link&int_id=inventory">Vehículos Nuevos y de Re-estreno</a>
+      </div>
+      <div class="modelos2">
+        <a href="https://www.porsche.com/spain/models/macan/macan-electric-models/macan-4-electric/"><img src="https://nav.porsche.com/00BC524/model-assets/1360/macan-electric.webp" alt="cayman"></a>
+        <a href="https://www.porsche.com/spain/models/macan/macan-models/macan/"><img src="https://nav.porsche.com/00BC524/model-assets/1360/macan.webp" alt="boxster"></a>
+       
+      </div>
+      <div class="marcaModelo">
+        <a href="https://www.porsche.com/spain/models/macan">Modelos Macan</a>
+      </div>
+    </div>
+  </div>
+  <div class="mitad2" id="cayenne">
+    <div class="estructura">
+      <div class="configurar">
+        <a href="https://configurator.porsche.com/es-ES/model-start/cayenne">Configurar</a>
+      </div>
+      <div class="comparar">
+       <a href="https://www.porsche.com/spain/models/cayenne/?compare">Comparar</a> 
+      </div>
+      <div class="reestreno">
+        <a href="https://finder.porsche.com/es/es-ES/search/list?modelSeriesKeys=cayenne&int_ref=globalnav&int_medium=link&int_id=inventory">Vehículos Nuevos y de Re-estreno</a>
+      </div>
+      <div class="modelos2">
+        <a href="https://www.porsche.com/spain/models/cayenne/cayenne-models/"><img src="https://nav.porsche.com/00BC524/model-assets/1360/cayenne.webp" alt="cayman"></a>
+        <a href="https://www.porsche.com/spain/models/cayenne/cayenne-coupe-models/"><img src="https://nav.porsche.com/00BC524/model-assets/1360/cayenne-coupe.webp" alt="boxster"></a>
+       
+      </div>
+      <div class="marcaModelo">
+       <a href="https://www.porsche.com/spain/models/cayenne">Modelos Cayenne</a> 
+      </div>
+    </div>
+  </div>
+  <div class="mitad2" id="modelos">
+    <img src="media/718 (1).webp" alt="718" onclick="mostrarModelos('718', document.getElementById('li718') )">
+    <img src="media/911.webp" alt="911" onclick="mostrarModelos('911', document.getElementById('li911'))">
+    <img src="media/taycan.webp" alt="Taycan" onclick="mostrarModelos('taycan', document.getElementById('litaycan'))">
+    <img src="media/panamera.webp" alt="Panamera" onclick="mostrarModelos('panamera', document.getElementById('lipanamera'))">
+    <img src="media/macan.webp" alt="Macan" onclick="mostrarModelos('macan', document.getElementById('limacan'))">
+    <img src="media/cayenne.webp" alt="Cayenne" onclick="mostrarModelos('cayenne', document.getElementById('licayenne'))">
+  </div>
+  <div class="mitad2" id="asesoramiento">
+    <div class="Posicionamiento">
+    <a href="https://configurator.porsche.com/es-ES/model-start/"><span class="hoverable">Configurar</a></span>
+    <a href="https://www.porsche.com/spain/compare/?model-range="><span class="hoverable">Comparar modelos</a></span>
+    <a href="https://finder.porsche.com/es/es-ES?int_ref=globalnav&int_medium=link&int_id=inventory"><span class="hoverable">Vehículos Nuevos y de Re-estreno</a></span>
+    <a href="https://connect-store.porsche.com/offer/es/es-ES"><span class="hoverable">Buscar servicios Connect</a></span>
+    <a href="https://www.porsche.com/spain/accessoriesandservice/porschefinancialservices/"><span class="hoverable">Porsche Financial Services</a></span>
+    <a href="https://www.porsche.com/spain/aboutporsche/e-performance/"><span class="hoverable">E-Performance</a></span>
+  </div>
+  </div>
+  
+  <div class="mitad2" id="tienda">
+  <a href="https://shop.porsche.com/es/es-ES"></a>
+  </a>
+  </div>
+  
+  <div class="mitad2" id="servicios">
+    <div class="Posicionamiento">
+    <a href="https://www.porsche.com/spain/accessoriesandservice/porscheservice/"><span class="hoverable">Mantenimiento y Servicio</a></span>
+    <a href="https://www.porsche.com/spain/accessoriesandservice/exclusive-manufaktur/"><span class="hoverable">Manufaktur - Vehículos Personalizados</a></span>
+    <a href="https://www.porsche.com/spain/accessoriesandservice/classic/"><span class="hoverable">Classic – Servicios y Recambios Originales</a></span>
+    <a href="https://www.porsche.com/spain/approvedused/porscheapproved/"><span class="hoverable">Porsche Approved - Garantía y </span> <br> <span class="hoverable"> Vehículos de Re-estreno</a></span>
+  </div>
+  </div>
+  <div class="mitad2" id="experiencias">
+    <div class="Posicionamiento">
+     <a href="https://www.porsche.com/spain/motorsportandevents/motorsport/"><span class="hoverable">Motorsport</span></a>
+     <a href="https://www.porsche.com/spain/motorsportandevents/experience/"><span class="hoverable">Porsche Experience</a></span>
+     <a href="https://porsche-drive.es/"><span class="hoverable">Porsche Drive</a></span>
+     <a href="https://www.porsche.com/spain/motorsportandevents/roadsafetyschool/"><span class="hoverable">Escuela de Seguridad Vial</a></span>
+     <a href="https://www.porsche.com/spain/motorsportandevents/porscheclubs/"><span class="hoverable">Clubs Porsche</a></span>
+     <a href="https://www.porsche.com/international/motorsportandevents/golf/"><span class="hoverable">Golf</a></span>
+     <a href="https://www.porsche.com/spain/aboutporsche/christophorusmagazine/"><span class="hoverable">Revista Christophorus</a></span>
+     <a href="https://www.porsche.com/spain/aboutporsche/porschemuseum/"><span class="hoverable">Museo Porsche</a></span>
+    </div>
+  </div>
+  <div class="mitad2" id="centros">
+    <div class="centrosPorsche">
+      <input type="search" name="ciudad" placeholder="Código postal o ciudad.">
+      <button><a href="#searched"><img src="media/buscar.png"></a></button>
+      <p>o</p>
+      <div class="ubicacionActual"><img src="media/ubicacion.png"><p>utilizar la ubicación actual.</p></div>
+  </div>
+  </div>
+  <div class="mitad2" id="myPorsche">
+    <div class="myPorsche"> 
+    <button class="button1">Iniciar Sesión</button>
+    <button>Descrubir más</button>
+    </div>
+    <div class="registrarse">
+    <span><a class="ahora" href="https://signup.porsche.com/es/es_ES/register">Registrarse ahora </a>
+      <a class="mundo" href="#">para descrubrir el fascinante mundo de Porsche.</a></span> <br>
+<hr></div>
+<div class="inicio">
+  <a href="https://identity.porsche.com/u/login/identifier?state=hKFo2SBvM2pSTXRkam9WTmhLeGtiaTV2cm0tSURxSndmSGV5SKFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIGdGVE4yOHNUaGdHN2pNaFdCS1FYSDN2aXlTYzhHNm5wo2NpZNkgVVlzSzAwTXk2YkNxSmRiUWhUUTBQYldtY1NkSUFNaWc&ui_locales=es&ext-country=es&ext-language=es"><p> <span class="hoverable">Inicio</p></span></a>
+  <a href="https://identity.porsche.com/u/login/identifier?state=hKFo2SBXcE1BaHBjbU5DSUJ4RGxsblR3NmJ2WUNoY2RGZGxiRaFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIFRzUW8xaXVhMEQ0b1VpVkl3MXRxTzYwUlVvUTNpdkhZo2NpZNkga28yRWJKbkplazhWb2p5VTNHdkpDQkFIcWQ0eHpzd3Y&ui_locales=es&ext-country=es&ext-language=es"><p> <span class="hoverable">Mensajes</span></p></a>
+  <a href="https://finder.porsche.com/es/es-ES/saved-searches"><p> <span class="hoverable">Busquedas guardadas</p></span></a>
+  <a href="https://finder.porsche.com/es/es-ES/favorites"><p><span class="hoverable">Vehiculos guardados</p></span></a>
+  <a href="https://identity.porsche.com/u/login/identifier?state=hKFo2SB6WTc4N1h0TTVCd2E0MkdfaTVDd1p0UmNPVUl2X00wZ6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIGp4Umw2OWVEemRBQjBWeE9Yb2dpR0w2aXJTdUF5ZWdRo2NpZNkgSzJTYUEzb2pCbWdiUDk1V3RCWVVmWndpczl6TTJiV0I&ui_locales=es&ext-country=es&ext-language=es"><p> <span class="hoverable">Ajustes del perfil</p></span></a>
+  <a href="https://identity.porsche.com/u/login/identifier?state=hKFo2SB6UU5yYlUyOGFmMGs0ZUM2dlNkX0VOZVpGVmVpYWU1LaFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIDMtTFZLV2I5TjVhTF9zS0hHUEhRMFp2TjA2c2hBZkV3o2NpZNkgSFE0eGVTdlFjTVNxYlp3UkgwMGVXOEtGdmtReFAwSGE&ui_locales=es&ext-country=es&ext-language=es"><p><span class="hoverable">Privacidad</p></span></a>
+  <a href="https://identity.porsche.com/u/login/identifier?state=hKFo2SBrbFBOcFZrdE5uSjZ5bFdfaTdXR1pnRHJsRFhnRVA4MKFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIEdSMHIzV3dydHZYZW5iczlLcFZLOHNac0l6WllqV09ho2NpZNkgVVlzSzAwTXk2YkNxSmRiUWhUUTBQYldtY1NkSUFNaWc&ui_locales=es&ext-country=es&ext-language=es"><p> <span class="hoverable">Contacto y asistencia tecnica</p></span></a>
+</div>
+
+  </div>
+  </div>
+  <div id="ocultarMenu">
+    <img src="media/cerrar.png" onclick="mostrarMenu()">
+  </div>
+</div>
+<!-- fin Menu -->
+  <!-- inicio Carlos  -->
+  <div id="parte1" class="parte1">
+    <video autoplay muted loop id="video-background" onclick="enlaceVideo()">
+      <source src="media/NuevoMacan4.mp4" type="video/mp4">
+  </video>
+    <div class="contenido1">
+      <div id="containerEnlace" onclick="enlaceVideo()">
+        <h1>Keep your essence.</h1>
+        <a href="https://www.porsche.com/spain/models/macan/macan-electric-models/macan-4-electric/'" class="enlaceMacan4">Descubre Macan 4</a>
+    </div>
+    <div id="pause"> 
+      <button id="pausePlay" onclick="botonPausa()">
+          <!-- <svg class="iconoPausa" id="pausa1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" style="fill: white;">
+          <path d="M7 6h3v12H7zm7 0h3v12h-3z"/>
+          </svg>
+          <svg class="iconoPausa" id="pausa2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" style="fill: white;">
+          <path d="M8 18V6l10 6z"/>
+          </svg> -->
+          <img src="media/pause.png" id="pausa-play">
+          
+          
+      </button>
+  </div>
+        <div id="navbar">
+            <nav class="navbar-items">
+                <ul class="navbar-items">
+                    <li class="size" onclick="mostrarMenu()"><img src="media/icons8-menu-50.png">Menú
+                    </li>
+                    <li class="porscheNavbar" id="porsche-nav"><a href="https://www.porsche.com/spain/" style="text-decoration: none; color: white;">Porsche</a></li>
+                    <li class="svgNavbar" id="svgUsuario" onclick="mostrarMenu()"><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                        width="100%" height="100%"
+                         >
+                       
+                       <g transform="translate(0.000000,32.000000) scale(0.100000,-0.100000)"
+                       fill="#FFFFFF" stroke="none">
+                       <path d="M112 247 c-26 -27 -28 -54 -6 -85 14 -20 14 -23 -1 -28 -16 -6 -45
+                       -54 -45 -74 0 -20 15 -9 30 23 18 38 58 55 98 41 15 -5 33 -23 42 -41 15 -32
+                       30 -43 30 -23 0 20 -29 68 -45 74 -15 5 -15 8 -1 28 22 32 20 61 -7 86 -30 28
+                       -68 28 -95 -1z m82 -13 c31 -30 9 -84 -34 -84 -24 0 -50 26 -50 50 0 24 26 50
+                       50 50 10 0 26 -7 34 -16z"/>
+                       </g>
+                       </svg></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+</div>
+<div id="paginaCompleta">
+<div id="parte2" class="parte2">
+    <a href="https://www.porsche.com/spain/models/taycan/taycan-models/taycan/" class="Textoimagen1"><div class="imagen-zoom"><img src="media/ElnuevoTaycan.avif"></img></div><div class="Textoimagen">El nuevo taycan.</div></a>
+    <a href="https://www.porsche.com/spain/models/cayenne/cayenne-coupe-models/"class="marginImg"><div class="imagen-zoom"><img src="media/NuevoCayenneE-HybridCoupé.avif"></img></div><div class="Textoimagen">Nuevo Cayenne E-Hybrid Coupé.</div></a>
+    <a href="https://www.porsche.com/spain/models/cayenne/cayenne-coupe-models/"class="marginImg"><div class="imagen-zoom"><img src="media/911CarreraS.avif"></img></div><div class="Textoimagen">911 Carrera S.</div></a>
+    
+
+</div>
+<!-- fin Carlos -->
+<!-- inicio Ousama  -->
+<center>
+  <div class="contenedor-titulo-imagenes">
+      <div class= "Titulo"> 
+          <h1>Modelos</h1>
+      </div>
+
+      <div class="contenedor-imagenes">
+          <div class="contenedor-fila">
+              <div class="contenedor-imagen">
+                  <div class="imagen-zoom">
+                    <a href="https://configurator.porsche.com/es-ES/model-start/718">
+                    <img src="https://images-porsche.imgix.net/-/media/787664363FDE4686BD0A6316DBB8422E_FD01D47051734F28956FF81D44A88210_718---Desktop?iar=0&w=590&ar=3%3A4&q=85&auto=format" class="imagenA">
+                  </a>  
+                  </div>
+                  <div class="texto-superpuesto">Biplaza con alto dinamismo de conducción gracias a su motor central.</div>
+                  <div class="texto-superpuesto2">Desde EUR 74.555,00 PVP recomendado.</div>
+                  <a href="https://configurator.porsche.com/es-ES/model-start/718">
+                  <div class="texto-superpuesto3">Configure su 718.</div>
+                </a>
+                <a href="https://www.porsche.com/spain/models/718/">
+                  <div class="texto-superpuesto4">Todos los modelos 718.</div>
+                </a>
+              </div>
+
+              <div class="contenedor-imagen">
+                  <div class="imagen-zoom">
+                    <a href="https://configurator.porsche.com/es-ES/model-start/911">
+                    <img src="https://images-porsche.imgix.net/-/media/6937027C36EC4613B14E2F8F91807228_79D8BB668E23451CABE55BCEA9E3FFB8_911---Desktop?iar=0&w=590&ar=3%3A4&q=85&auto=format" class="imagenB">
+                  </a>  
+                  </div>
+                  <div class="texto-superpuesto">El deportivo icónico con motor trasero y las más altas prestaciones.</div>
+                  <div class="texto-superpuesto2">Desde EUR 141.868.00 PVP recomendado.</div>
+                  <a href="https://configurator.porsche.com/es-ES/model-start/911">
+                  <div class="texto-superpuesto3">Configure su 911.</div>
+                </a>
+                <a href="https://www.porsche.com/spain/models/911/">
+                  <div class="texto-superpuesto4">Todos los modelos 911.</div>
+                </a>
+              </div>
+          </div>
+
+          <div class="contenedor-fila">
+              <div class="contenedor-imagen">
+                  <div class="imagen-zoom">
+                    <a href="https://configurator.porsche.com/es-ES/model-start/taycan">
+                    <img src="https://images-porsche.imgix.net/-/media/597FBFF43D96408FADBA6AE44CD0372E_ADBA835557B243B3A1D4682C61FA1CA5_Tokyo---Desktop?iar=0&w=590&ar=3%3A4&q=85&auto=format" class="imagenC">
+                  </a>  
+                  </div>
+                  <div class="texto-superpuesto">Berlina deportiva totalmente eléctrica <br> con maletero delantero y trasero.</div>
+                  <div class="texto-superpuesto2">Desde EUR 105.682,00 PVP recomendado.</div>
+                  <a href="https://configurator.porsche.com/es-ES/model-start/taycan">
+                  <div class="texto-superpuesto3">Configure su Taycan.</div>
+                </a>
+                <a href="https://www.porsche.com/spain/models/taycan/taycan-models/">
+                  <div class="texto-superpuesto4">Todos los modelos Taycan.</div>
+                </a>
+              </div>
+
+              <div class="contenedor-imagen">
+                  <div class="imagen-zoom">
+                    <a href="https://configurator.porsche.com/es-ES/model-start/panamera">
+                    <img src="https://images-porsche.imgix.net/-/media/CD077339BC4A4AFB803ED6D028082604_F8FE50949A584084B6F0373E8F8FE6E3_Panamera---Desktop?iar=0&w=590&ar=3%3A4&q=85&auto=format" class="imagenD">
+                  </a>  
+                  </div>
+                  <div class="texto-superpuesto">Berlina deportiva de lujo de cuatro plazas.</div>
+                  <div class="texto-superpuesto2">Desde EUR 128.737,00 PVP recomendado.</div>
+                  <a href="https://configurator.porsche.com/es-ES/model-start/panamera">
+                  <div class="texto-superpuesto3">Configure su Panamera.</div>
+                </a>
+                <a href="https://www.porsche.com/spain/models/panamera/panamera-models/">
+                  <div class="texto-superpuesto4">Todos los modelos Panamera.</div>
+                </a>
+              </div>
+          </div>
+
+          <div class="contenedor-fila">
+              <div class="contenedor-imagen">
+                  <div class="imagen-zoom">
+                    <a href="https://configurator.porsche.com/es-ES/model-start/macan">
+                    <img src="https://images-porsche.imgix.net/-/media/D9863281BEC14473AE2EAD15A724142B_2691C775BE6D452AA99C243DCF95CF1D_Berlin---Desktop?iar=0&w=590&ar=3%3A4&q=85&auto=format" class="imagenE">
+                  </a>  
+                  </div>
+                  <div class="texto-superpuesto">Todoterreno compacto de gran versatilidad.</div>
+                  <div class="texto-superpuesto2">Desde EUR 85.382,00 PVP recomendado.</div>
+                  <a href="https://configurator.porsche.com/es-ES/model-start/macan">
+                  <div class="texto-superpuesto3">Configure su Macan.</div>
+                </a>
+                <a href="https://www.porsche.com/spain/models/macan/macan-electric-models/"> 
+                <div class="texto-superpuesto4">Todos los modelos Macan.</div>
+              </a> 
+              </div>
+
+              <div class="contenedor-imagen">
+                <a href="https://configurator.porsche.com/es-ES/model-start/cayenne">
+                <div class="imagen-zoom">
+                      <img src="https://images-porsche.imgix.net/-/media/657C1C9232C0426583987BC10E7EAE09_B3896980D34C432290085ED61B6F477F_Cayenne---Desktop?iar=0&w=590&ar=3%3A4&q=85&auto=format" class="imagenF">
+                    </a>  
+                  </div>
+                  <div class="texto-superpuesto">Todoterreno de hasta 5 plazas y, sin embargo, ante todo, un deportivo. </div>
+                  <div class="texto-superpuesto2">Desde EUR 108.619,00 PVP recomendado.</div>
+                  <a href="https://configurator.porsche.com/es-ES/model-start/cayenne">
+                  <div class="texto-superpuesto3">Configure su Cayenne.</div>
+                </a>
+                <a href="https://www.porsche.com/spain/models/cayenne/">
+                <div class="texto-superpuesto4">Todos los modelos Cayenne.</div>
+              </a>  
+              </div>
+          </div>
+      </div>
+  </div>
+</center>
+    
+<!-- fin Ousama -->
+  <!-- inicio Harold  -->
+<div class="contall">
+<div class="container-buscador">
+    <div class="div-porsche">
+        <div class="searchcontainer" >
+            <div class="container-consearch">
+            <div class="search">
+                <h2 class="buscadorhead">Encuentre su nuevo Porsche, o bien, su Porsche de re-estreno.</h2>
+                <p >Encuentre fácilmente el Porsche de sus sueños. Introduzca su ubicación y consulte las mejores ofertas disponibles cerca de usted.</p>
+            </div>
+            </div>
+            <div class="buscador">
+                <div class="container-search">
+                    <p class="busqueda" id="busqueda">Introduzca una ubicación para su búsqueda</p>
+                    
+                    <div class="input-wrapper">
+                        <input type="search" class="input" placeholder="Introduzca la ciudad o el codigo postal">
+                      
+                        <svg xmlns="https://cdn.ui.porsche.com/porsche-design-system/icons/search.min.1a2481bb5b7acefdb7f69d34d5b2887a.svg" class="input-icon"  fill="currentColor">
+                          <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                        </svg>
+                      </div>
+                </div>
+            </div>
+    </div>
+    
+    </div>
+
+
+        <div class="imagencoche">
+            <img src="https://images-porsche.imgix.net/-/media/DBB5B21ECE2947CB8771FD9948199CD3_5C671D79C88443DD84474F9B312C57D4_Enhanced-Finder? " class="imagen-a">
+            
+        </div>
+</div>
+
+    <div class="descubre">
+        <h3 class="descubremas">Descubra más sobre Porsche</h3>
+    </div>
+    <!-- IMAGEN 1 -->
+<div class="images">
+    <div class="container">
+        <div class="image-container">
+            <div class="content">
+                <p class="text">Porsche Experience España - Perfeccionamiento de técnicas de conducción.</p>
+                <img src="https://images-porsche.imgix.net/-/media/5C61E39B78C94BA9ADBAA9BEA608CFE8_33BDA1A6744544D09CC8E105379D6F9D_1-1_PD-Experience_1200x1200?iar=0&amp;w=1299&amp;ar=1%3A1&amp;q=85&amp;auto=format" >
+                
+            </div>
+        </div>
+    </div>
+
+   <!-- IMAGEN 2 -->
+    <div class="container">
+        <div class="image-container">
+          <div class="content"> 
+            <p class="text">Porsche Drive Rental - Alquile el Porsche de sus sueños.</p>
+                <img src="https://images-porsche.imgix.net/-/media/98001F24F5374E3D82A69DE7335B9FCD_A63E56A98B454AEE9C65C5C3F42D92D8_1-1_PD-Drive_1200x1200?iar=0&amp;w=1299&amp;ar=1%3A1&amp;q=85&amp;auto=format"  >
+            </div>
+        </div>
+    </div>
+
+    <!-- IMAGEN 3 -->
+    <div class="boxshadow">
+    <div class="container">
+        <div class="image-container">
+          <div class="content"> 
+            <p class="text">Tienda Porsche Online </p>
+                <img src="https://images-porsche.imgix.net/-/media/3974001501EF4B3FB441982AA44D8555_E5608466DD294EE5B6445EE28F851518_1-1_PIB-Shop_1200x1200?iar=0&amp;w=1299&amp;ar=1%3A1&amp;q=85&amp;auto=format" >
+          </div>
+          </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+  <!-- inicio Harold  -->
+
+<!-- inicio Natalia  -->
+
+<footer>
+
+  <div class="part-1">
+  <h3 class="region"> Región / Idioma Actual</h3>
+  <img class="spain" src="./media/bandera.png" alt="">
+  <a class="bloque" href="#"> España / Español</a>
+  <a class="bloque2" href="https://www.porsche.com/"> Cambiar</a>
+  </div>
+  <br><br>
+  
+
+  <div class="part-2">
+  <div class="redes">
+  <h3 class="region">Contacto</h3>
+  <p>¿Preguntas?</p>
+  <form class="Contacto" action="https://www.porsche.com/spain/dialogue/contactandinformation/" method="post">
+  <button type="submit">Formulario de Contacto</button>
+  </form>
+  </div>
+
+  <div class="redes">
+  <h3 class="region">Redes Sociales</h3>
+  <p>Ponte en contacto con nosotros a través de las redes sociales.</p>
+  
+  <span>
+  <a href="https://www.facebook.com/porsche/"><img class="logos" src="media/facebook.png" alt=""></a>
+  <a href="https://www.instagram.com/porsche/"><img class="logos" src="media/instagram.png" alt=""></a>
+  <a href="https://ar.pinterest.com/porsche/"><img class="logos" src="media/pinterest.png" alt=""></a>
+  <a href="https://www.youtube.com/user/Porsche"><img class="logos" src="media/youtube.png" alt=""></a>
+  <a href="https://twitter.com/porsche"><img class="logos" src="media/youtube.png" alt=""></a>
+  <a href="https://www.linkedin.com/company/porsche-ag/"><img class="logos" src="media/linkedin.png" alt=""></a>
+  </span>
+  </div>
+  </div>
+  <br>
+  <h3 class="region">Empresa</h3>
+  <div class="part-3">
+
+  <div class="box">
+    <a href="https://www.porsche.com/spain/aboutporsche/overview/"><p class="block1">Porsche de un vistazo</p></a>
+    <a href="https://www.porsche.com/spain/aboutporsche/jobs/"><p class="block1">Empleo</p></a>
+    <a href="https://www.porsche.com/spain/aboutporsche/pressreleases/"><p class="block1">Newsroom y Notas de Prensa</p></a>
+  </div>
+
+  <div class="box">
+    <a href="https://www.porsche.com/spain/aboutporsche/porscheiberica/"><p class="block1">Porsche iberica</p></a>
+    <a href="https://www.porsche.com/spain/motorsportandevents/porschepartnerforum/"><p class="block1">Porsche Partner Forum</p></a>
+    <a href="https://www.porsche.com/spain/dialogue/contactandinformation/"><p class="block1">Contacto</p></a>
+  </div>
+
+  <div class="box">
+    <a href="https://www.porsche.com/spain/aboutporsche/responsibility/"><p class="block1">Sostenibilidad</p></a>
+    <a href="https://www.porsche.com/spain/aboutporsche/service/"><p class="block1">Filiales</p></a>
+  </div>
+</div>
+
+  <br /><br />
+  <hr />
+  <div class="part-4"> 
+    <span>
+      <a class="bloque" href="#">© 2024 Porsche Ibérica, S.A</a>
+      <a class="bloque3" href="https://www.porsche.com/spain/legal-notice/">Aviso Legal,</a>
+      <a class="bloque3" href="https://www.porsche.com/spain/legal-notice/cookie-policy/">Politica de cookies,</a>
+      <a class="bloque3" href="https://www.porsche.com/spain/legal-notice/privacy-policy/">Politica de Privacidad,</a>
+      <a class="bloque3" href="https://www.porsche.com/spain/?cs_redirect=1">Otros Paises,</a>
+      <a class="bloque3" href="https://www.porsche.com/licenses/">Open Source Software Notice</a>
+      <a class="bloque3" href="https://www.porsche.com/spain/aboutporsche/overview/compliance/whistleblower-system/">Sistema de Denuncia de irregularidades.</a>
+    </span>
+    <p>
+      * Datos medidos de conformidad con el procedimiento de ensayo WLTP
+      (Worldwide Harmonized Light Vehicles Test Procedure o Procedimiento
+      Mundial Armonizado para Ensayos de Vehículos Ligeros), un
+      procedimiento de medición más realista para determinar los datos de
+      consumo y de emisiones contaminantes (CO2), requerido por la ley. Las
+      prestaciones accesorias y los complementos (accesorios, modelos de
+      neumáticos, etc.) pueden modificar de forma sustancial los parámetros
+      de un vehículo, como, por ejemplo, el peso, la resistencia de
+      rodamiento y la aerodinámica y, junto a las condiciones meteorológicas
+      y del tráfico, así como con la manipulación individual, puede afectar
+      al consumo de gasolina y de electricidad, al nivel de emisiones de CO2
+      y a los valores de rendimiento del vehículo.
+    </p>
+    
+    <p>Usted tiene a su disposición la base de datos del Instituto para la
+      Diversificación y Ahorro de Energía donde puede consultar información
+      de consumos, emisiones y otras especificaciones del modelo</p>
+     <a class="bloque3" href="https://coches.idae.es/base-datos/marca-y-modelo">https://coches.idae.es/base-datos/marca-y-modelo</a> 
+     <br><br>
+
+    
+    <span>
+     <a class="bloque" href="#">**Usted podrá encontrar información relevante sobre los modelos Porsche totalmente eléctricos</a>
+        <a class="bloque3" href="https://www.porsche.com/spain/accessoriesandservice/porscheservice/vehicleinformation/bev/">aqui..</a></span>
+
+    <P>*** Este catalogo pertenece a un año modelo anterior al año modelo que actualmente se comercializa. Tanto el equipamiento opcional como el equipamiento de serie del modelo configurado podría sufrir alguna modificación con respecto a la información contenida en dicho catálogo.</P>
+  
+
+  <img class="footerporsche" src="./media/porsche.jpeg" alt="">
+</div>
+</footer>
+
+<!-- Fin Natalia -->  
+  
+
+
+</body>
+  
+</html>
